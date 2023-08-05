@@ -1,0 +1,38 @@
+#include <stdio.h>
+void main(){
+  int a;
+  printf("Enter your weekdays Number(1-7):\n");
+  scanf("%d", &a);
+  
+  if(a==1){
+      printf("Weekday %d is Sunday", a);
+  }
+  else if(a==2){
+      printf("Weekday %d is Monday", a);
+      
+  }
+  
+  else if(a==3){
+      printf("Weekday %d is Tuesday", a);
+      
+  }
+  else if(a==4){
+      printf("Weekday %d is Wednesday", a);
+      
+  }
+  else if(a==5){
+      printf("Weekday %d is Thursday", a);
+      
+  }
+  else if(a==6){
+      printf("Weekday %d is Friday", a);
+      
+  }
+  else if(a==7){
+      printf("Weekday %d is Satuday", a);
+      
+  }
+  else{
+      printf("Invalid Number is given");
+  }
+}
