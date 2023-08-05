@@ -1,0 +1,18 @@
+/* Leap Year Finder*/
+
+#include <stdio.h>
+
+void main(){
+    int leap_year;
+    printf("Enter your year:\n");
+    scanf("%d", &leap_year);
+    
+    if ((leap_year%4==0 && leap_year%100!=0)|| leap_year%400==0){
+        printf("Your given year %d is Leap Year", leap_year);
+    }
+    else{
+        printf("Your given year %d is not Leap Year", leap_year);
+    }
+    
+    
+}
