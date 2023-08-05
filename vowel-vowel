@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main(){
+  char alp;
+  printf("Enter your character:\n");
+  scanf("%c",&alp);
+  
+  if (alp=='a' || alp=='e' || alp=='i' || alp=='o' || alp=='u'){
+      printf("Given Character %c is vowel", alp);
+  }
+  else {
+      printf("Given Character %c is not vowel", alp);
+  } 
+}
