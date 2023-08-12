@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main(){
+    int a, n, cube;
+    
+    printf("Enter Any Number:");
+    scanf("%d", &n);
+    
+    for(a=1; a<=n; a++){
+    cube= a*a*a;
+    
+    printf("Number is:%d and its cube's value is:%d\n", a, cube);
+    }
+}
