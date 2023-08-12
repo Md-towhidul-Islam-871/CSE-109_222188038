@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void main() {
+    int i,a, sum=0,avg;
+    
+    printf("Enter 10 numbers:\n");
+    
+    for(i=1; i<=10; i++){
+        printf("Enter Number %d:", i);
+        scanf("%d", &a);
+        sum+=a;
+        
+    }
+    avg= sum/10;
+    
+    printf("sum is %d and avarge is %d", sum, avg);
+}
