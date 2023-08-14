@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+void main(){
+    int a, number, sum=0, avg;
+    printf("Enter Your Number: ");
+    scanf("%d", &number);
+    
+    for(a=1; a<=number ; a++){
+        sum+=a;
+        avg=sum/number;
+        printf("%d ", a);
+    }
+    printf("\nThe sum of 1st %d numbers: %d",number, sum);
+    printf("\nThe avarage of the sum is: %d", avg);
+
+}
