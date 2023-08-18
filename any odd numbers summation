@@ -1,0 +1,18 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+void main(){
+    int a, n, odd, sum=0;
+    printf("Enter your Number\n");
+    scanf("%d", &n);
+    
+    printf("Your odd numbers are:\n");
+    
+    for(a=1; a<=n; a++){
+        odd= 2*a-1;
+        printf("%d ", odd);
+        sum+=odd;
+        
+    }
+    
+    printf("\nThe odd's numbers sum is: %d", sum);
+}
