@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int b, num, sum=0, a[1000];
+
+       printf("Enter the number to store in the array : ");
+       scanf("%d",&num);
+       
+       
+       for(b=0;b<num;b++)
+        {
+	      printf("element - %d : ",b);
+	      scanf("%d",&a[b]);
+	      sum += a[b];
+	    }
+
+    
+
+    printf("Sum of all elements : %d", sum);
+return 0;
+    
+}
