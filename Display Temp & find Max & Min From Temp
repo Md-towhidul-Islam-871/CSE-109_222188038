@@ -1,0 +1,52 @@
+#include<stdio.h>
+void main(){
+    int c=2, w=7, i, j, temp[c][w], c1max, c1min, c2max,c2min;
+    
+    for(i=0; i<c; i++){
+        for(j=0; j<w; j++){
+            printf("City %d, Day %d:", i+1, j+1);
+            scanf("%d", &temp[i][j]);
+        }
+    }
+    for(i=0; i<c; i++){
+        for(j=0; j<w; j++){
+            printf("City %d, Day %d: %d Degree c\n", i+1, j+1, temp[i][j]);
+        }
+    }
+    
+    c1max=c1min=temp[0][0];
+    c2max=c2min=temp[1][0];
+    
+    for(i=0; i<w; i++){
+        if(temp[0][i]>c1max){
+            c1max=temp[0][i];
+        }
+    }
+    
+    for(i=0; i<w; i++){
+        if(temp[0][i]<c1min){
+            c1min=temp[0][i];
+        }
+    }
+    
+    for(i=0; i<w; i++){
+        if(temp[1][i]>c2max){
+            c2max=temp[1][i];
+        }
+    }
+    
+    for(i=0; i<w; i++){
+        if(temp[1][i]>c2max){
+            c2max=temp[1][i];
+        }
+    }
+    
+    
+    printf("City %,Maximum: %d:, Minimum: %d: \n", c1max, c1min);
+    printf("City %,Maximum: %d:, Minimum: %d: \n", c2max, c2min);
+    
+    
+    
+    
+    
+}
